@@ -1,0 +1,39 @@
+body,
+html{
+  margin-height:100vh;
+  display: flex;
+  align-content:center ;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.cosmic{
+  --Size:200px;
+  width: var(--Size);
+  height: var(--Size);
+  background-image: linear-gradient(
+		to bottom,
+		#dbdcd7 0%,
+		#dddcd7 5%,
+		#e2c9cc 10%,
+		#e7627d 36%,
+		#b8235a 59%,
+		#801357 71%,
+		#3d1635 84%,
+		#1c1a27 100%
+	);
+	border-radius: 50%;
+	filter: drop-shadow(0 0 2rem rgba(388, 48, 205, 14.8));
+	animation: floating 4s ease-in-out infinite;
+}
+@keyframes floating{
+  from{
+  transform:translate(0,0px)
+  }
+  65%{
+    transform: translate(0,10px);
+  }
+  to{
+    transform: translate(0,-0px);
+  }
+}
